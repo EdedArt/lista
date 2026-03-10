@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Mr Gallina</title>
+<style>
+body{
+    font-family: Arial;
+    margin:40px;
+}
+
+input{
+    padding:8px;
+    width:200px;
+}
+
+button{
+    padding:8px;
+    margin:5px;
+    cursor:pointer;
+}
+
+#estado{
+    background:#f4f4f4;
+    padding:15px;
+    margin-top:20px;
+    border:1px solid #ccc;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Restaurante Mr Gallina</h1>
+
+<h3>Nuevo pedido</h3>
+
+<input id="pedido" type="text" placeholder="Escribe el pedido">
+<button onclick="crearPedido()">Solicitar Pedido</button>
+
+<br><br>
+
+<h3>Procesos del restaurante</h3>
+
+<button onclick="enviarCocina()">Enviar a Cocina</button>
+<button onclick="servirPedido()">Servir Pedido</button>
+<button onclick="solicitarCuenta()">Solicitar Cuenta</button>
+<button onclick="pagarPedido()">Pagar</button>
+
+<h3>Estado del sistema</h3>
+
+<pre id="estado">No hay pedidos todavía</pre>
+
+<script src="app.js"></script>
+
+</body>
+</html>
